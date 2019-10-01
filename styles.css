@@ -12,12 +12,12 @@ html {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
 }
-
 main {
   margin: 0 auto;
   max-width: 1500px;
   padding: 20px;
 }
+
 h2{
   font-size: 1.5rem;
   line-height: 1.5rem;
@@ -36,6 +36,8 @@ p{
 
 }
 .card{
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border: 2px solid #aaa;
   border-radius: 5px;
@@ -43,7 +45,7 @@ p{
   max-height: 20rem;
   margin-bottom: 10px;
   overflow: auto;
-  overflow-wrap: break-word;
+  word-break: break-word;
   padding:1rem;
 }
 .card:nth-child(6){
@@ -58,12 +60,21 @@ p{
 }
 .image__rammi{
   display: flex;
-  align-items: flex-start;
+  align-content: flex-start;
 }
-.list{
-  padding-top: 1rem;
+.card__list{
   display: flex;
+  flex-wrap: wrap;
   list-style:none;
   font-weight: bold;
-}
+  padding-top: 1rem;
+  flex: 1 0 auto;
+  align-items: last baseline;
 
+}
+.card__list__content{
+  padding-left: 0.5rem;
+}
+.card__list__nidur{
+  align-items: space-around; 
+}
