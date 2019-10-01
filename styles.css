@@ -19,3 +19,13 @@ main {
   max-width: 1500px;
   padding: 20px;
 }
+.cards{
+  justify-content: space-around;
+}
+.card{
+  color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  max-width: 20rem;
+  max-height: 29.375rem;
+}
